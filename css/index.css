@@ -102,14 +102,14 @@ header{background-color:inherit; height: 0px;}
     .header-list li{margin-bottom: 15px; display: flex; justify-content: center; align-items: center;} */
 
 .header-list{
-    width: 30%;
+    width: 325px;
     margin: 0 auto;
     box-shadow: 0 0 15px rgb(12, 136, 252);
 }
 
 .header-list svg{
-    max-width: 25px;
-    max-height: 25px;
+    width: 25px;
+    height: 25px;
     transition: ease-in-out 0.3s;
 }
 
@@ -131,9 +131,10 @@ header{background-color:inherit; height: 0px;}
     position: fixed;
     bottom: 10px;
     margin: 0 auto;
-    width: 30%;
+    width: 325px;
     display: flex;
-    justify-content: space-around;
+    padding: 20px;
+    justify-content: space-between;
     align-items: center;
     list-style: none;
     text-decoration: none;
@@ -145,10 +146,22 @@ header{background-color:inherit; height: 0px;}
     text-decoration: none;
 }
 
+@media(max-width: 920px){
+    .header-menu ul {
+        width: 245px;;
+    } 
+    .header-list{
+        width: 245px;;
+    }
+}
+
 @media(max-width: 670px){
     .header-menu ul {
-        width: 60%;
+        width: 245px;;
     } 
+    .header-list{
+        width: 245px;;
+    }
 }
 
 .intro{
@@ -353,6 +366,10 @@ header{background-color:inherit; height: 0px;}
     min-width: 183px;
     margin: 0 auto;
     width: 100%;
+}
+
+.info .card.activeTap{
+    overflow: hidden;
 }
 
 .info .card.activeTap ul{
